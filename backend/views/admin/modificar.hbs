@@ -1,0 +1,42 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+
+        <h2 class="active"> Modificar Novedad</h2>
+
+        <form action="/admin/novedades/modificar" method="post" enctype="multipart/form-data">
+
+        <input type="hidden" value="{{novedad.id}}"name="id">
+
+            <label for="" id="label-tit"class="fadeIn second">Titulo:</label>
+            <input type="text" class="fadeIn second" name="titulo" value="{{novedad.titulo}}">
+
+            <label for=""class="fadeIn third">Subtitulo:</label>
+            <input type="text"  class="fadeIn third" name="subtitulo"  value="{{novedad.subtitulo}}">
+
+            <div>
+                
+                <p>
+                <label class="fadeIn third">Imagen:  <input type="file" name="imagen" id="imagen" class="fadeIn third" id="textareas"></label>
+                </p>
+
+                <label class="fadeIn third">¿Desea Eliminar imagen actual?<input type="checkbox" name="img_delete" value="1" class="fadeIn third"></label>
+
+                <p>
+                <input type="hidden" name="img_original" value="{{novedad.img_id}}" class="fadeIn third">
+                </p>
+
+            </div>
+           
+            <label for="" class="fadeIn third">Cuerpo:</label>
+            
+            <textarea name="cuerpo" id="textareas"class="fadeIn third">{{novedad.cuerpo}}</textarea>
+
+            <button type="submit" class="fadeIn fourth">Modificar</button>
+
+
+        </form>
+        {{#if error}}
+        <h5>{{message}}</h5>
+        {{/if}}
+    </div>
+</div>

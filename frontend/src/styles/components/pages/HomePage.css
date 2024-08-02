@@ -1,0 +1,11 @@
+.intro{
+    width: 50%;
+    margin: 10px;
+}
+
+.derecha{
+    width: 450px;
+    height: 250px;
+    float: right;
+    margin-left: 15px;
+}

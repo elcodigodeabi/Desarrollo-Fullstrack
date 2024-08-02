@@ -1,0 +1,27 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+        <!-- Tabs Titles -->
+        <h2 class="active"> Sign In </h2>
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+
+            <img src="/images/icono.jpg" id="icon" alt="User Icon"  />
+
+        </div>
+
+        <!-- Login Form -->
+        <form action="/admin/login" method="post">
+
+            <input type="text" id="login" class="fadeIn second" name="usuario" placeholder="Login">
+
+            <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
+
+            <button type="submit" class="fadeIn fourth">Ingresar</button>
+
+        </form>
+        {{#if error}}
+        <p>Usuario o clave incorrectos</p>
+        {{/if}}
+    </div>
+</div>

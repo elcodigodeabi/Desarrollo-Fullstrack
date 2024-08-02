@@ -1,0 +1,49 @@
+{{!-- FILA 1 --}}
+<p>Hola {{persona}}!<a class="boton-azul" href="/admin/login/logout">Cerrar Sesion</a></p> 
+
+{{!-- FILA 2 --}}
+<div class="novi">
+    <div>
+        <h3>Listado de Novedades</h3>
+                <a href="/admin/novedades/agregar" class="boton-verde">Nuevo</a>
+    </div>
+</div>
+
+
+{{!-- FILA 3 COMIENZO DE LA TABLA --}}
+<table class="default">
+<div>
+    <div>
+  <tr class="primer-fila">
+
+    <th>ID</th>
+
+    <th>Titulo</th>
+
+    <th>Imagen</th>
+
+    <th>Acciones</th>
+
+
+
+  </tr>
+</div>
+
+
+  {{#each novedades}}
+  <tr>
+
+    <td>{{id}}</td>
+
+    <td>{{titulo}}</td>
+
+    <td>{{{imagen}}}</td>
+    
+    <td><a href="/admin/novedades/modificar/{{id}}" ><img src="/images/icono_edit.png" class="edit"></a><a alt="Editar"  href="/admin/novedades/eliminar/{{id}}"><img class="edit" alt="Eliminar" src="/images/icono_delete.png"></a></td>
+
+
+
+  </tr>
+{{/each}}
+</table>
+</div>

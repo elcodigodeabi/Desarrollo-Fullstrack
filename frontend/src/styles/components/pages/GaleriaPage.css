@@ -1,0 +1,18 @@
+.galery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
+.galery img{
+    
+    display: inline;
+    margin:5px;
+    width:20%;
+    height: 200px; 
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 0.5em;
+
+
+}

@@ -1,0 +1,27 @@
+.servicios{
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.servicios .info{
+    font-size: 15px;
+}
+
+.info{
+
+    display: inline;
+    margin: 5px;
+}
+
+.servicios img{
+    max-width: 250px;
+    border-radius: 5px;
+    display: block;
+}
+
+.servicios:nth-child(even){
+    flex-direction: row-reverse;
+}

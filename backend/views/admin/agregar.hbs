@@ -1,0 +1,23 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+
+        <h2 class="active"> Agregar Novedad </h2>
+
+        <form action="/admin/novedades/agregar" method="post" enctype="multipart/form-data" >
+
+            <input type="text" class="fadeIn second" name="titulo" placeholder="Titulo">
+
+            <input type="text"  class="fadeIn third" name="subtitulo" placeholder="Subtitulo">
+
+            <label class="fadeIn third">Imagen:<input type="file"  class="fadeIn third" name="imagen"></label>
+
+            <textarea name="cuerpo" id="textareas"class="fadeIn third" placeholder="Cuerpo" style="text-align: center"></textarea>
+            
+            <button type="submit" class="fadeIn fourth">Guardar</button>
+
+        </form>
+        {{#if error}}
+         <p>{{message}}</p>
+        {{/if}}
+    </div>
+</div>
